@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import player from 'lottie-web'
+import { LottieModule } from 'ngx-lottie'
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+	  LottieModule.forRoot({ player: () => player })
   ],
   providers: [],
   bootstrap: [AppComponent]
