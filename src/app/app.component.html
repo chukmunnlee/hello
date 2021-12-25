@@ -1,6 +1,6 @@
 <div class="center-it">
 	<ng-lottie *ngIf="win.innerHeight >= win.innerWidth"
 		[options]="options" width="80vw"> </ng-lottie>
-	<ng-lottie *ngIf="win.innerWidth >= win.innerHeight"
+	<ng-lottie *ngIf="win.innerWidth > win.innerHeight"
 		[options]="options" height="80vh"> </ng-lottie>
 </div>
