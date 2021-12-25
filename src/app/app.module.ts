@@ -12,9 +12,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-	  LottieModule.forRoot({ player: () => player })
+	  LottieModule.forRoot({ player: () => player }),
   ],
-  providers: [],
+  providers: [
+	  { provide: Window, useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
